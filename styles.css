@@ -1,0 +1,54 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+    background-size: cover;
+    color: #e6f2ff;
+  }
+  .overlay {
+    background-color: rgba(0, 0, 51, 0.85);
+    min-height: 100vh;
+  }
+  .section {
+    margin-bottom: 30px;
+  }
+  .section h2 {
+    border-bottom: 2px solid #3399ff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #66ccff;
+  }
+  .job-title {
+    font-weight: bold;
+  }
+  .company {
+    font-style: italic;
+    color: #a0d8ff;
+  }
+  .date {
+    float: right;
+    color: #b3daff;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: #a0d8ff;
+  }
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffffff;
+  }
+  .navbar-dark .navbar-brand {
+    color: #66ccff;
+  }
+  .code-icon {
+    margin-right: 8px;
+    color: #66ccff;
+  }
+  .btn-download {
+    margin-top: 15px;
+    background-color: #3399ff;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  .btn-download:hover {
+    background-color: #267acc;
+  }

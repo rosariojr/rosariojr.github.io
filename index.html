@@ -76,13 +76,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" onclick="downloadCV()"><i class="fas fa-download"></i> Download</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="languages.html">Languages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="downloadCV('Johnnatan RosarioCV2.pdf','https://rosariojr.github.io/Johnnatan RosarioCV2.pdf')"><i class="fas fa-download"></i> Download</a></li>
         </ul>
       </div>
     </div>
@@ -96,16 +96,35 @@
       </div>
     </div>
   </div>
-  <script>
+ <!-- <script>
     function downloadCV() {
-      const blob = new Blob([document.documentElement.outerHTML], { type: 'text/html' });
+       const blob = new Blob([document.documentElement.outerHTML], { type: 'text/html' });
       const link = document.createElement('a');
       link.href = URL.createObjectURL(blob);
       link.download = 'Johnnatan_Rosario_CV.html';
       document.body.appendChild(link);
       link.click();
-      document.body.removeChild(link);
+      document.body.removeChild(link); 
     }
+  </script>-->
+  <script>
+    function downloadCV(nombreArchivo, urlArchivo) {
+      // Crear un enlace temporal
+      const enlace = document.createElement("a");
+      enlace.href = urlArchivo; // Ruta del archivo PDF
+      enlace.download = nombreArchivo; // Nombre del archivo al descargar
+  
+      // Agregar el enlace al documento
+      document.body.appendChild(enlace);
+  
+      // Hacer clic automáticamente en el enlace
+      enlace.click();
+  
+      // Eliminar el enlace temporal
+      document.body.removeChild(enlace);
+  }
+  
+
   </script>
 </body>
 </html>

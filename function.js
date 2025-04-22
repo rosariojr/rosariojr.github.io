@@ -5,7 +5,19 @@
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById("navigation").innerHTML = data;
-                });
+                })
+                .catch(error => console.error("Hubo un error:", error));
+        });
+        // Código para insertar el profile
+
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("profile.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("profilepic").innerHTML = data;
+                })
+                .catch(error => console.error("Hubo un error:", error));
+
         });
     
 

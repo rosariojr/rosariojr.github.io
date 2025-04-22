@@ -119,6 +119,25 @@ body {
     color: #0f0f0f;
     box-shadow: 0 0 10px #267acc;
   }
+  .profile-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #267acc;
+    box-shadow: 0 0 10px #267acc;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.05);
+  }
+  
   
   
 

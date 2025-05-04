@@ -1,157 +1,157 @@
 
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johnnatan Rosario - Software Engineer CV</title>
-   
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="function.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-    <link rel="stylesheet" href="styles.css"> <!-- Puedes incluir estilos comunes -->
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Johnnatan Rosario - Software Engineer CV</title>
  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="function.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css"> <!-- Puedes incluir estilos comunes -->
+
+
 </head>
 <body>
-    <div id="navigation"></div>
+  <div id="navigation"></div>
 
-   
+ 
 
-    <div class="overlay">
-        <div class="container py-5">
-          <div class="text-center mb-4 animate__animated animate__fadeInDown">
-            <div id="profilepic"></div>
-            
-            
-            <h1><i class="fas fa-laptop-code code-icon"></i>Skills</h1><p><h2>🧑‍💻 Developer & IT Skills</h2></p>
+  <div class="overlay">
+      <div class="container py-5">
+        <div class="text-center mb-4 animate__animated animate__fadeInDown">
+          <div id="profilepic"></div>
+          
+          
+          <h1><i class="fas fa-laptop-code code-icon"></i>Skills</h1><p><h2>🧑‍💻 Developer & IT Skills</h2></p>
+        </div>
+        <div class=" mb-4 animate__animated animate__fadeInDown">
+          <div class="submenu text-center">
+            <button onclick="showSection('web', event)" class="active">🌐 Web</button>
+  <button onclick="showSection('mobile', event)">📱 Mobile</button>
+  <button onclick="showSection('network', event)">🛰️ Network</button>
+  <button onclick="showSection('it', event)">🛠️ IT Support</button>
           </div>
-          <div class=" mb-4 animate__animated animate__fadeInDown">
-            <div class="submenu text-center">
-              <button onclick="showSection('web', event)" class="active">🌐 Web</button>
-    <button onclick="showSection('mobile', event)">📱 Mobile</button>
-    <button onclick="showSection('network', event)">🛰️ Network</button>
-    <button onclick="showSection('it', event)">🛠️ IT Support</button>
-            </div>
-
-
-  
-
-  <!-- Web Section -->
-  <div id="web" class="section active">
-    <h2>🧠 Core Technical Skills</h2>
-    <ul>
-      <li class="checkeado">HTML, CSS, JavaScript – core building blocks of the web</li>
-      <li class="checkeado">Version Control – Git and GitHub</li>
-      <li class="checkeado">Responsive Design – Flexbox, Grid, media queries</li>
-      <li class="checkeado">Cross-Browser Compatibility – testing and debugging</li>
-      <li class="checkeado">Debugging – DevTools, console logging, linters</li>
-    </ul>
-
-    <h2>⚙️ Frontend Development</h2>
-    <ul>
-      <li class="checkeado">React, Vue, or Angular – modern JS frameworks</li>
-      <li class="checkeado" >State Management – Redux, Context API, Vuex</li>
-      <li class="checkeado">UI Libraries – Tailwind, Bootstrap, MUI</li>
-      <li class="checkeado" >Accessibility – semantic HTML and ARIA</li>
-    </ul>
-
-    <h2>🖥️ Backend Development</h2>
-    <ul>
-      <li class="checkeado">Node.js with Express – APIs and server logic</li>
-      <li class="checkeado">Databases – MongoDB, PostgreSQL, MySQL</li>
-      <li class="checkeado">Authentication – JWT, OAuth</li>
-      <li class="checkeado">REST & GraphQL APIs – integration and design</li>
-    </ul>
-
-    <h2>🧪 Testing</h2>
-    <ul>
-      <li class="checkeado">Unit & Integration Testing – Jest, Cypress</li>
-      <li class="checkeado">Linting & Formatting – ESLint, Prettier</li>
-    </ul>
-  </div>
-
-  <!-- Mobile Section -->
-  <div id="mobile" class="section">
-    <h2>🤖 Android Development (Java)</h2>
-    <ul>
-      <li class="checkeado">Java & Android SDK</li>
-      <li class="checkeado">XML UI Design – layouts, styles, components</li>
-      <li class="checkeado">Activity & Fragment lifecycle management</li>
-      <li class="checkeado">Local Storage – SQLite, Room, SharedPreferences</li>
-      <li class="checkeado">Networking – Retrofit, JSON, APIs</li>
-    </ul>
-
-    <h2>🍎 iOS Development (Swift & SwiftUI)</h2>
-    <ul>
-      <li class="checkeado">Swift Basics – optionals, protocols, closures</li>
-      <li class="checkeado">SwiftUI – declarative UI with @State, @Binding</li>
-      <li class="checkeado">Combine – data flow and reactivity</li>
-      <li class="checkeado">Core Data & Persistence – local storage solutions</li>
-      <li class="checkeado">Async Networking – URLSession, Codable, async/await</li>
-    </ul>
-
-    <h2>📦 Deployment</h2>
-    <ul>
-      <li class="checkeado">Google Play Store – building, signing, publishing</li>
-      <li class="checkeado">App Store Connect – TestFlight, provisioning profiles</li>
-    </ul>
-  </div>
-
-   <!-- Network Section -->
-   <div id="network" class="section">
-    <h2>🌐 Networking Fundamentals</h2>
-    <ul>
-      <li class="checkeado">TCP/IP & OSI Models – layer-by-layer understanding</li>
-      <li class="checkeado">IP Addressing – IPv4/IPv6, subnetting</li>
-      <li class="checkeado">Protocols – HTTP, HTTPS, DNS, DHCP, FTP</li>
-      <li class="checkeado">LAN/WAN/WiFi – switching, routing, topology basics</li>
-    </ul>
-    <h2>🔧 Tools & Troubleshooting</h2>
-    <ul>
-      <li class="checkeado">ping, nslookup, ipconfig – basic command-line tools</li>
-      <li class="checkeado">Wireshark – packet sniffing & analysis</li>
-      <li class="checkeado">nmap – network scanning and port mapping</li>
-    </ul>
-  </div>
-
-  <!-- IT Support Section -->
-  <div id="it" class="section">
-    <h2>🛠️ IT Support Skills</h2>
-    <ul>
-      <li class="checkeado">Operating Systems – Windows, macOS, Linux basics</li>
-      <li class="checkeado">Hardware Support – desktops, laptops, peripherals</li>
-      <li class="checkeado">Active Directory – user accounts, permissions</li>
-      <li class="checkeado">Ticketing Systems – JIRA, Zendesk, ServiceNow</li>
-      <li class="checkeado"Remote Support – RDP, TeamViewer, AnyDesk</li>
-    </ul>
-    <h2>🔐 Security & Maintenance</h2>
-    <ul>
-      <li class="checkeado">Antivirus & Malware Removal</li>
-      <li class="checkeado">Backup & Recovery – using imaging and cloud tools</li>
-      <li class="checkeado">Patch Management – OS & app updates</li>
-      <li class="checkeado">Basic Networking – printers, routers, shared drives</li>
-    </ul>
-    <h2>📈 Soft Skills</h2>
-    <ul>
-      <li class="checkeado">Customer Support – clear communication, empathy</li>
-      <li class="checkeado">Documentation – writing clear troubleshooting steps</li>
-      <li class="checkeado">Time Management – triage and prioritization</li>
-    </ul>
-  </div>
 
 
 
-            
-        </div>
 
-        
+<!-- Web Section -->
+<div id="web" class="section active">
+  <h2>🧠 Core Technical Skills</h2>
+  <ul>
+    <li class="checkeado">HTML, CSS, JavaScript – core building blocks of the web</li>
+    <li class="checkeado">Version Control – Git and GitHub</li>
+    <li class="checkeado">Responsive Design – Flexbox, Grid, media queries</li>
+    <li class="checkeado">Cross-Browser Compatibility – testing and debugging</li>
+    <li class="checkeado">Debugging – DevTools, console logging, linters</li>
+  </ul>
 
-        </div>
+  <h2>⚙️ Frontend Development</h2>
+  <ul>
+    <li class="checkeado">React, Vue, or Angular – modern JS frameworks</li>
+    <li class="checkeado" >State Management – Redux, Context API, Vuex</li>
+    <li class="checkeado">UI Libraries – Tailwind, Bootstrap, MUI</li>
+    <li class="checkeado" >Accessibility – semantic HTML and ARIA</li>
+  </ul>
+
+  <h2>🖥️ Backend Development</h2>
+  <ul>
+    <li class="checkeado">Node.js with Express – APIs and server logic</li>
+    <li class="checkeado">Databases – MongoDB, PostgreSQL, MySQL</li>
+    <li class="checkeado">Authentication – JWT, OAuth</li>
+    <li class="checkeado">REST & GraphQL APIs – integration and design</li>
+  </ul>
+
+  <h2>🧪 Testing</h2>
+  <ul>
+    <li class="checkeado">Unit & Integration Testing – Jest, Cypress</li>
+    <li class="checkeado">Linting & Formatting – ESLint, Prettier</li>
+  </ul>
+</div>
+
+<!-- Mobile Section -->
+<div id="mobile" class="section">
+  <h2>🤖 Android Development (Java)</h2>
+  <ul>
+    <li class="checkeado">Java & Android SDK</li>
+    <li class="checkeado">XML UI Design – layouts, styles, components</li>
+    <li class="checkeado">Activity & Fragment lifecycle management</li>
+    <li class="checkeado">Local Storage – SQLite, Room, SharedPreferences</li>
+    <li class="checkeado">Networking – Retrofit, JSON, APIs</li>
+  </ul>
+
+  <h2>🍎 iOS Development (Swift & SwiftUI)</h2>
+  <ul>
+    <li class="checkeado">Swift Basics – optionals, protocols, closures</li>
+    <li class="checkeado">SwiftUI – declarative UI with @State, @Binding</li>
+    <li class="checkeado">Combine – data flow and reactivity</li>
+    <li class="checkeado">Core Data & Persistence – local storage solutions</li>
+    <li class="checkeado">Async Networking – URLSession, Codable, async/await</li>
+  </ul>
+
+  <h2>📦 Deployment</h2>
+  <ul>
+    <li class="checkeado">Google Play Store – building, signing, publishing</li>
+    <li class="checkeado">App Store Connect – TestFlight, provisioning profiles</li>
+  </ul>
+</div>
+
+ <!-- Network Section -->
+ <div id="network" class="section">
+  <h2>🌐 Networking Fundamentals</h2>
+  <ul>
+    <li class="checkeado">TCP/IP & OSI Models – layer-by-layer understanding</li>
+    <li class="checkeado">IP Addressing – IPv4/IPv6, subnetting</li>
+    <li class="checkeado">Protocols – HTTP, HTTPS, DNS, DHCP, FTP</li>
+    <li class="checkeado">LAN/WAN/WiFi – switching, routing, topology basics</li>
+  </ul>
+  <h2>🔧 Tools & Troubleshooting</h2>
+  <ul>
+    <li class="checkeado">ping, nslookup, ipconfig – basic command-line tools</li>
+    <li class="checkeado">Wireshark – packet sniffing & analysis</li>
+    <li class="checkeado">nmap – network scanning and port mapping</li>
+  </ul>
+</div>
+
+<!-- IT Support Section -->
+<div id="it" class="section">
+  <h2>🛠️ IT Support Skills</h2>
+  <ul>
+    <li class="checkeado">Operating Systems – Windows, macOS, Linux basics</li>
+    <li class="checkeado">Hardware Support – desktops, laptops, peripherals</li>
+    <li class="checkeado">Active Directory – user accounts, permissions</li>
+    <li class="checkeado">Ticketing Systems – JIRA, Zendesk, ServiceNow</li>
+    <li class="checkeado"Remote Support – RDP, TeamViewer, AnyDesk</li>
+  </ul>
+  <h2>🔐 Security & Maintenance</h2>
+  <ul>
+    <li class="checkeado">Antivirus & Malware Removal</li>
+    <li class="checkeado">Backup & Recovery – using imaging and cloud tools</li>
+    <li class="checkeado">Patch Management – OS & app updates</li>
+    <li class="checkeado">Basic Networking – printers, routers, shared drives</li>
+  </ul>
+  <h2>📈 Soft Skills</h2>
+  <ul>
+    <li class="checkeado">Customer Support – clear communication, empathy</li>
+    <li class="checkeado">Documentation – writing clear troubleshooting steps</li>
+    <li class="checkeado">Time Management – triage and prioritization</li>
+  </ul>
+</div>
+
+
+
+          
       </div>
 
       
+
+      </div>
+    </div>
+
+    
 
 </body>
 </html>
